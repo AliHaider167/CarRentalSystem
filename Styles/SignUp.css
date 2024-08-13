@@ -1,0 +1,112 @@
+body{
+  font-family: Poppin, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(23,23,23);
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.Sign-Up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  
+}
+
+
+.logo{
+  width: 100px;
+}
+
+.signUpInfo{
+  margin-bottom: 7px;
+  width: 200px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 13px;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 0.666667px;
+  border-bottom-color: rgb(200, 150, 1);
+}
+
+
+
+
+.signUpInfo:focus{
+  outline: none;
+}
+
+.SignUPButton{
+  margin-top: 10px;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(200, 150, 1);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.15s;
+}
+
+
+.SignUPButton:hover{
+  opacity: 0.7;
+}
+
+.Account{
+  font-size: 12px;
+  padding: 0;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+.login{
+  color: green;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.login:hover{
+  color: blue;
+}
+
+/*----------------- Animations --------------------*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+/*---------------- Making The Page Responsive --------------*/
+
+@media only screen and (max-width: 480px) {
+  .Sign-Up{
+   margin-top: -90px; 
+  }
+  
+}

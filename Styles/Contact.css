@@ -1,0 +1,303 @@
+*{
+  font-family: Poppin, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(23,23,23);
+}
+
+
+.mainSection{
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+h1{
+  color: brown;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 80px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.WHATTSAPP{
+  margin-top: 20px;
+}
+
+.whatsApp{
+  display: flex;
+}
+
+.whatsapp{
+  width: 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: -6px;
+  
+}
+
+.whatsapp:hover{
+  background-color: rgb(70, 223, 70);
+}
+
+.number{
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: rgb(200, 150, 1);
+  transition: 0.5s;
+}
+
+.number:hover{
+ text-decoration: underline;
+}
+
+.mail{
+  border-left-style: solid;
+  border-left-color: rgb(200, 150, 1);
+  padding-left: 50px;
+}
+
+.MAIL{
+  margin-top: 10px;
+}
+
+.name{
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  width: 186px;
+}
+
+.mymail{
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  width: 390px;
+  display: block;
+}
+
+textarea{
+  display: block;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 400px;
+  height: 150px;
+}
+
+textarea:focus, .name:focus, .usermail:focus{
+  outline: none;
+}
+
+.send{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 330px;
+  border-style: none;
+  cursor: pointer;
+  color: rgb(231,231,231);
+  background-color: rgb(200, 150, 1);
+  transition: 0.5s;
+}
+
+.send:hover{
+  box-shadow: 0 0 6px rgba(165, 42, 42, 0.5);
+  opacity: 0.7;
+}
+
+.icons{
+  display: flex;
+}
+
+.Incon{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.GithubIcon{
+  width: 40px; 
+  height: 40px; 
+  object-fit: contain; 
+  margin-top: -5px; 
+  margin-left: -5px;
+}
+
+.iconDiv{
+  position: relative;
+}
+
+.toolip{
+  position: absolute;
+  font-size: 12px;
+  background-color: rgba(0,0,0, 0.8);
+  color: rgb(231,231,231);
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 4px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.iconDiv:hover .toolip{
+  opacity: 1;
+}
+
+.githubtooltip{
+  margin-top: -5px; 
+  margin-left: -7px;
+}
+
+.instagramtooltip{
+  margin-left: -19px;
+}
+
+.LinkedIntooltip{
+  margin-left: -14px;
+}
+/*----------------- Animations --------------------*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+/*-------------------- Making Page Responsive -------------------- */
+
+@media only screen and (max-width: 480px) {
+  .mainSection{
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  
+  h1{
+    font-size: 22px;
+    margin-top: 110px;
+  }
+  
+  .WHATTSAPP{
+    margin-top: 0;
+    margin-left: -70px;
+  }
+  
+  .whatsApp{
+    display: flex;
+  }
+  
+  .whatsapp{
+    width: 20px;
+    border-radius: 4px;
+    margin-top: 0.5px;    
+  }
+ 
+  .whatsAppFont{
+    font-size: 14px;
+  }
+  
+  .number{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: rgb(200, 150, 1);
+    transition: 0.5s;
+    font-size: 12px;
+  }
+  
+  .number:hover{
+   text-decoration: underline;
+  }
+  
+  .mail{
+    border-top-style: solid;
+    border-top-color: rgb(200, 150, 1);
+    padding-left: 0;
+    border-left: none;
+  }
+  
+  .MAIL{
+    margin-top: 15px;
+    font-size: 17px;
+  }
+  
+  .name{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    width: 156px;
+  }
+  
+  .mymail{
+    width: 330px;
+  }
+  
+  textarea{
+    width: 337px;
+  }
+  
+  
+  .send{
+    margin-left: 280px;
+  }
+  
+  
+  .Incon{
+    width: 20px;
+    height: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .GithubIcon{
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    margin-top: -7px;
+    margin-left: -5px;
+  }
+  
+  .toolip{
+    font-size: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .githubtooltip{
+    margin-left: -5px;
+  }
+
+  .instagramtooltip{
+    margin-left: -11px;
+    margin-top: -19px;
+  }
+
+  .LinkedIntooltip{
+    margin-left: -8px;
+    margin-top: -19px;
+  }
+}
