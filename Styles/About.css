@@ -1,0 +1,175 @@
+*{
+  font-family: Poppin, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(23,23,23);
+}
+
+main{
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.heading1{
+  padding-top: 30px;
+  margin-bottom: 40px;
+  color: rgb(23,23,23);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: brown;
+  text-align: center;
+}
+
+.history{
+  display: flex;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(200, 150, 1);
+  margin-left: -70px;
+  margin-right: -70px;
+  padding-bottom: 30px;
+}
+
+.Description{
+  width: 600px;
+  margin-left: 90px;
+  text-align: justify;
+}
+
+.mainPoint{
+  font-weight: 700;
+}
+
+.historyImage{
+  width: 400px;
+  height: 200px;
+  object-fit: contain;
+  padding-top: -50px;
+  margin-left: 100px;
+  margin-top: 0px;
+}
+
+.Service{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(200, 150, 1);
+  margin-left: -70px;
+  margin-right: -70px;
+  padding-bottom: 30px;
+}
+
+.SERVICE{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.SERVICE:hover{
+  background-color: rgba(200, 150, 1, 0.4);
+  box-shadow: 0 0 6px rgba(165, 42, 42,0.7);
+}
+
+.serviceImage{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  padding-top: 10px;
+}
+
+.serviceDescription{
+  text-align: justify;
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+/*----------------- Animations --------------------*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+/*--------------- Making Website Responsive ---------------*/
+
+@media only screen and (max-width: 480px) {
+  main{
+    margin-top: 80px;
+    margin-left: -30px;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  .heading1{
+    font-size: 18px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+  }
+  
+  .history{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Description{
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .mainPoint{
+    font-weight: 700;
+  }
+  
+  .historyImage{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+    padding-top: -50px;
+    margin-left: 100px;
+    margin-top: 0px;
+  }
+  
+ 
+.Service{
+  grid-template-columns: 1fr;
+  border-bottom-style: none;
+  margin-left: 0px;
+  margin-right: -20px;
+}
+
+.SERVICE{
+  margin-left: 95px;
+  margin-right: 20px;
+}
+
+.serviceImage{
+  width: 150px;
+  height: 150px;
+}
+
+.serviceDescription{
+  width: 220px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  
+}

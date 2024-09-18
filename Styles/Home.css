@@ -1,0 +1,177 @@
+*{
+  font-family: Poppin, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(23,23,23);
+}
+
+body{
+  margin-top: 45px;
+}
+
+
+.Background{
+  position: relative;
+  left: 0;
+  right: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.BlackImage{
+  width: 100%;
+  height: 400px;
+}
+
+.MainImageSection
+{
+  position: absolute;
+  left: 160px;
+  top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainImage{
+  width: 900px;
+  height: 300px;
+  object-fit: contain;
+  position: absolute;
+  transition: 0.5s;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.leftButton{
+  width: 100px;
+  position: absolute;
+  right: -1080px;
+  top: 100px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.rightButton{
+  width: 100px;
+  position: absolute;
+  right: 35px;
+  top: 100px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.leftButton:hover, .rightButton:hover{
+  opacity: 0.8;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.Gallery{
+  border-top-style: solid;
+  border-top-width: 5px;
+  margin-top: 400px;
+  border-top-color: rgb(200, 150, 1);
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(200, 150, 1);
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.Gallery-heading{
+  margin-top: 30px;
+  font-weight: 550;
+  color: brown;
+  text-align: center;
+}
+
+.Gallery-Grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.GalleryImage{
+  width: 300px;
+  height: 150px;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.GalleryImage:hover{
+  width: 320px;
+  height: 170px;
+  opacity: 0.7;
+}
+
+
+/*----------------- Animations --------------------*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+/*--------------- Making the Website Responsive -----------------*/
+
+@media only screen and (max-width: 480px) {
+
+.MainImageSection
+{
+  position: absolute;
+  left: 160px;
+  top: 40px;
+  padding-bottom: 10px;
+}
+
+.MainImage{
+  width: 250px;
+  height: 300px;
+  left: -90px;
+  top: -40px;
+}
+
+.leftButton{
+  width: 33px;
+  right: -240px;
+  top: 100px;
+}
+
+.rightButton{
+  width: 30px;
+  right: 125px;
+  top: 100px;
+}
+
+.Gallery{
+  margin-top: 300px;
+}
+
+.Gallery-heading{
+  font-size: 20px;
+}
+
+.Gallery-Grid{
+  grid-template-columns: 1fr;
+  margin-left: 35px;
+}
+
+.GalleryImage{
+  width: 250px;
+  margin-left: 30px;
+  height: 130px;
+}
+
+.GalleryImage:hover{
+  margin-left: 20px;
+}
+
+}

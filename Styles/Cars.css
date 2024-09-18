@@ -1,0 +1,151 @@
+*{
+  font-family: Poppin, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(23,23,23);
+}
+
+
+.MAIN{
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(200, 150, 1);
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+h1{
+  text-align: center;
+  margin-top: 80px;
+  color: brown;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.carsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  transition: 0.5s;
+}
+
+.car1{
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+  transition: 0.5s;
+  border-style: solid;
+  border-width: 0.666667px;
+  border-color: rgb(200, 150, 1);
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+
+.Thumbnail{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(200, 150, 1);
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.Thumbnail:hover{
+  width: 165px;
+}
+
+.car1:hover{
+  box-shadow: 0 0 6px rgba(200, 150, 1, 0.5);
+}
+
+.Details{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.nameOfCar{
+  width: 200px;
+  height: 30px;
+  font-weight: 550;
+  color: brown;
+}
+
+.speed{
+  width: 250px;
+  line-height: 20px;
+}
+
+.limit{
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.Rent{
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 550;
+  color: brown;
+}
+
+.days{
+  font-size: 14px;
+}
+
+.message{
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  opacity: 0;
+}
+
+.ReserveButton{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  color: rgb(231,231,231);
+  background-color: rgb(200, 150, 1);
+  transition: 0.5s;
+}
+
+.ReserveButton:hover{
+  box-shadow: 0 0 6px rgba(165, 42, 42, 0.5);
+  opacity: 0.7;
+}
+
+/*----------------- Animations --------------------*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+/*------------------ Making Website Responsive -------------------*/
+
+@media only screen and (max-width: 480px) {
+
+
+  .carsGrid{
+    grid-template-columns: 1fr;
+  }
+
+  h1{
+    font-size: 25px;
+    margin-top: 110px;
+  }
+}

@@ -1,0 +1,230 @@
+*{
+  font-family: Poppin, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(23,23,23);
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.MAIN{
+  margin-top: 80px;
+  margin-left: 200px;
+}
+
+
+.image{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 25px;
+}
+
+.details{
+  display: flex;
+}
+
+.description{
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.name{
+  color: brown;
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.AVG{
+  font-weight: 700;
+}
+
+.speed{
+  padding-bottom: 8px;
+}
+
+.rent{
+  font-weight: 550;
+}
+
+.RENT{
+  color: brown;
+  font-weight: 700;
+}
+
+.confirm{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  color: rgb(231,231,231);
+  background-color: rgb(200, 150, 1);
+  transition: 0.5s;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.confirm:hover{
+  box-shadow: 0 0 6px rgba(165, 42, 42, 0.5);
+  opacity: 0.7;
+}
+
+.output{
+  position: absolute;
+  left: 400px;
+  top: 150px;
+  width: 450px;
+  box-shadow: 0 0 6px rgba(0,0,0, 0.5);
+  background-color: white;
+  border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.message{
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 3px;
+  width: 391px;
+  padding: 0;
+}
+
+.okay{
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 0.666667px;
+  border-color: rgb(23,23,23);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 350px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.okay:hover{
+  background-color: rgb(200, 150, 1);
+  border: none;
+}
+
+/*----------------- Animations --------------------*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+/*----------------- Making the Page Responsive -------------*/
+
+@media only screen and (max-width: 480px){
+
+  .MAIN{
+    margin-top: 110px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .date{
+    font-size: 25px;
+    text-align: start;
+  }
+
+  .imagediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  
+  .image{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .details{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+  }
+  
+  .description{
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  
+  .name{
+    color: brown;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 7px;
+  }
+  
+  .AVG{
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .speed{
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .rent{
+    font-weight: 550;
+    font-size: 16px;
+  }
+  
+  .RENT{
+    font-size: 16px;
+  }
+  
+  .confirm{
+    margin-bottom: 20px;
+  }
+  
+  .confirm:hover{
+    box-shadow: 0 0 6px rgba(165, 42, 42, 0.5);
+    opacity: 0.7;
+  }
+  
+  .output{
+    left: 30px;
+    top: 290px;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .message{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    width: 320px;
+    text-align: start;
+    font-size: 14px;
+  }
+  
+  .okay{
+    margin-left: 260px;
+  }
+  
+}

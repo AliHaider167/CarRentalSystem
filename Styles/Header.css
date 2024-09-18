@@ -1,0 +1,160 @@
+*{
+  font-family: Poppin, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(23,23,23);
+}
+
+header{
+  background-color: rgb(200, 150, 1);
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  position: fixed;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 12px ;
+  padding-top: 12px;
+  z-index: 100;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.leftSide{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger-menu{
+ width: 20px;
+}
+
+.company-logo{
+  width: 30px;
+  border-radius: 100px;
+  margin-right: 100px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.company-logo:hover{
+  box-shadow: 0 0 6px rgba(0,0,0, 0.6);
+}
+
+.rightSide{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 400px;
+  
+}
+
+.navItem{
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.navItem:hover{
+  color: brown;
+  text-decoration: underline dotted;
+}
+
+.LogoPic{
+  position: relative;
+}
+
+.logo{
+  width: 50px;
+  cursor: pointer;
+}
+
+.LogoPic:hover p{
+  opacity: 1;
+}
+
+.logOut{
+  position: absolute;
+  top: 35px;
+  white-space: nowrap;
+  font-size: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+  cursor: pointer;
+  transition: 0.15s;
+  background-color: rgba(0,0,0, 0.8);
+  opacity: 0;
+}
+
+/*----------------- Animations --------------------*/
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+/* -------------------- Making Header Responsive ---------------------- */
+
+@media only screen and (max-width: 480px)  {
+
+  header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px ;
+    padding-top: 10px;
+  }
+
+    
+  .leftSide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu{
+  width: 15px;
+  }
+
+  .company-logo{
+    width: 20px;
+    border-radius: 100px;
+    margin-left: 220px;
+    cursor: pointer;
+    transition: 0.15s;
+  }
+
+  .company-logo:hover{
+    box-shadow: 0 0 6px rgba(0,0,0, 0.6);
+  }
+
+  .rightSide{
+    display: flex;
+    margin-left: 0;
+    margin-top: 10px;
+    border-top-style: solid;
+    border-top-color: brown;
+    padding-top: 10px; 
+  }
+
+  .navItem{
+    font-size: 12px;
+}
+
+
+.logo{
+  width: 25px;
+}
+ 
+}
