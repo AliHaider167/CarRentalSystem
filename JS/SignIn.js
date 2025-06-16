@@ -76,5 +76,5 @@ function signIn() {
 
 const SignInButton = document.querySelector('.SignUPButton');
 SignInButton.addEventListener('click', () => {
-  signIn();
+  window.Location.href = "../Home.html";
 });
